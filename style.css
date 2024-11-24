@@ -1,22 +1,19 @@
-/* General styles */
 body {
     margin: 0;
-    font-family: 'Roboto', Arial, sans-serif; /* Clean, thick, and readable font */
-    color: #ffffff; /* All text in white */
-    background-color: #00274d; /* Dark blue background */
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #ffffff; /* text in white cuz if its black it aint gon look good */
+    background-color: #00274d; /* darkblue background because cool */
     overflow-x: hidden;
 }
 
-/* Container */
 .container {
     width: 80%;
     margin: auto;
     padding: 20px;
     animation: fadeIn 2s ease-in-out;
-    line-height: 1.8; /* Add better line spacing for readability */
+    line-height: 1.8; /* add some line spacing for readability cuz i cant read */
 }
 
-/* Intro Section */
 .intro {
     display: flex;
     align-items: center;
@@ -24,49 +21,49 @@ body {
 }
 
     .intro img {
-        width: 150px; /* Fixed width */
-        height: 150px; /* Fixed height */
-        margin-right: 20px; /* Space between image and name */
-        border: 3px solid #ffffff; /* Add a white border for aesthetics */
-        object-fit: cover; /* Crop the image if necessary to fit the square */
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+        border: 3px solid #ffffff;
+        object-fit: cover;
     }
 
 
 
     .intro h1 {
-        font-size: 3rem; /* Larger font size for name */
+        font-size: 3rem;
         font-weight: bold;
         color: #ffffff;
     }
 
 .skill-icon {
-    width: 20px; /* size for the icons */
+    width: 20px;
     height: 20px;
-    vertical-align: middle; /* align icon with the text */
-    margin-right: 10px; /* add space between icon and text */
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
-/* Section Headings */
+
 h2 {
     margin-top: 20px;
-    font-size: 2rem; /* readable section heading */
+    font-size: 2rem;
     color: #ffffff;
 }
 
-/* List styles */
+
 ul {
-    list-style-type: disc; /* bllet points */
+    list-style-type: disc; /* bullet points cuz why not */
     padding-left: 40px; /* padding for indentation */
 }
 
     ul li {
-        font-size: 1.2rem; /* bigger size for better readability */
+        font-size: 1.2rem;
         margin: 10px 0;
     }
 
-/* Links */
+
 a {
-    color: #80d4ff; /*light blue for links */
+    color: #80d4ff; /*light blue for links duhhh */
     text-decoration: none;
 }
 
@@ -74,7 +71,7 @@ a {
         text-decoration: underline;
     }
 
-/* animation */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
