@@ -1,0 +1,88 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif; /* Clean, thick, and readable font */
+    color: #ffffff; /* All text in white */
+    background-color: #00274d; /* Dark blue background */
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+    line-height: 1.8; /* Add better line spacing for readability */
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .intro img {
+        width: 150px; /* Fixed width */
+        height: 150px; /* Fixed height */
+        margin-right: 20px; /* Space between image and name */
+        border: 3px solid #ffffff; /* Add a white border for aesthetics */
+        object-fit: cover; /* Crop the image if necessary to fit the square */
+    }
+
+
+
+    .intro h1 {
+        font-size: 3rem; /* Larger font size for name */
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+.skill-icon {
+    width: 20px; /* size for the icons */
+    height: 20px;
+    vertical-align: middle; /* align icon with the text */
+    margin-right: 10px; /* add space between icon and text */
+}
+
+/* Section Headings */
+h2 {
+    margin-top: 20px;
+    font-size: 2rem; /* readable section heading */
+    color: #ffffff;
+}
+
+/* List styles */
+ul {
+    list-style-type: disc; /* bllet points */
+    padding-left: 40px; /* padding for indentation */
+}
+
+    ul li {
+        font-size: 1.2rem; /* bigger size for better readability */
+        margin: 10px 0;
+    }
+
+/* Links */
+a {
+    color: #80d4ff; /*light blue for links */
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
