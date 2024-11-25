@@ -10,7 +10,6 @@ body {
     width: 80%;
     margin: auto;
     padding: 20px;
-    animation: fadeIn 2s ease-in-out;
     line-height: 1.8; /* add some line spacing for readability cuz i cant read */
 }
 
@@ -69,17 +68,5 @@ a {
 
     a:hover {
         text-decoration: underline;
-    }
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
     }
 }
