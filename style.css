@@ -6,6 +6,16 @@ body {
     overflow-x: hidden;
 }
 
+.fade-in-text {  /* ANIMATION THAT I FOUND FROM A BLOGSPOT*/
+  font-size: 150px;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn { /* animation as well */
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .container {
     width: 80%;
     margin: auto;
