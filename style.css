@@ -1,66 +1,295 @@
 body {
+    font-family: 'Nunito', sans-serif;
     margin: 0;
-    font-family: 'Roboto', Arial, sans-serif;
-    color: #ffffff; /* text in white cuz if its black it aint gon look good */
-    background-color: #00274d; /* darkblue background because cool */
-    overflow-x: hidden;
+    padding: 0;
+    background-color: #181824;
+    color: #fff;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    line-height: 1.8; /* add some line spacing for readability cuz i cant read */
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.intro {
+header {
+    background-color: #23243a;
+    padding: 15px 0;
+    border-bottom: 2px solid #2e2f4a;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
 }
 
-    .intro img {
-        width: 150px;
-        height: 150px;
-        margin-right: 20px;
-        border: 3px solid #ffffff;
-        object-fit: cover;
-    }
-
-    .intro h1 {
-        font-size: 3rem;
-        font-weight: bold;
-        color: #ffffff;
-    }
-
-.skill-icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 10px;
+.logo {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #ffb6e9; /* pink */
 }
 
-h2 {
-    margin-top: 20px;
-    font-size: 2rem;
-    color: #ffffff;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-ul {
-    list-style-type: disc; /* bullet points cuz why not */
-    padding-left: 40px; /* padding for indentation */
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
 }
 
-    ul li {
-        font-size: 1.2rem;
-        margin: 10px 0;
-    }
-
-a {
-    color: #80d4ff; /* light blue for links duhhh */
+nav ul li a {
     text-decoration: none;
+    color: #7eeeff; /* cyan */
+    font-weight: 400;
+    padding: 5px 0;
 }
 
-    a:hover {
-        text-decoration: underline;
+nav ul li a:hover {
+    color: #ffb6e9; /* pink */
+    border-bottom: 2px solid #ffb6e9;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.2em;
+    color: #ffb6e9; /* pink */
+    margin-bottom: 15px;
+}
+
+section h3 {
+    font-size: 1.5em;
+    color: #7eeeff; /* cyan */
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+.hero {
+    background-color: #23243a;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    color: #7eeeff; /* cyan */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    color: #ffb6e9; /* pink */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffb6e9; /* pink */
+    color: #23243a;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #7eeeff; /* cyan */
+    color: #23243a;
+}
+
+#about .container {
+    text-align: left;
+}
+#about h2, #about .intro-text {
+    text-align: center;
+}
+
+.skills-list, .interests-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.skills-list li, .interests-list li {
+    background-color: #23243a;
+    color: #ffb6e9; /* pink */
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 0.95em;
+    border: 1px solid #7eeeff; /* cyan */
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #23243a;
+    border: 1px solid #2e2f4a;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+    color: #fff;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: #181824;
+}
+
+.project-card h3 {
+    color: #7eeeff; /* cyan */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.project-card p {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+.project-links {
+    margin-top: auto;
+}
+
+.link-button {
+    display: inline-block;
+    background-color: #2e2f4a;
+    color: #ffb6e9; /* pink */
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    margin-right: 8px;
+    border: 1px solid #7eeeff; /* cyan */
+}
+.link-button:hover {
+    background-color: #7eeeff; /* cyan */
+    color: #23243a;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.contact-link {
+    display: inline-block;
+    background-color: #23243a;
+    color: #7eeeff; /* cyan */
+    padding: 10px 20px;
+    margin: 5px 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid #ffb6e9; /* pink */
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: #ffb6e9; /* pink */
+    color: #23243a;
+}
+
+footer {
+    background-color: #23243a;
+    color: #ffb6e9; /* pink */
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
     }
+    .logo {
+        margin-bottom: 10px;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.2em;
+    }
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+    
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+    .cta-button, .contact-link {
+        padding: 10px 18px;
+        font-size: 0.95em;
+    }
+    .skills-list, .interests-list {
+        justify-content: center;
+    }
+}
